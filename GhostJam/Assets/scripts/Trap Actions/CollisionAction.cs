@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActionScript : MonoBehaviour
+public class CollisionAction : ActionScript
 {
     public void performAction(GameObject gm) {
-        Debug.Log("Implement action to perform");
+        GameState.gameState = GameState.State.GameOver;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Trap : MonoBehaviour
+public class TrapAction : MonoBehaviour
 {
     public ActionScript actionScript;
 
@@ -17,22 +17,10 @@ public class Trap : MonoBehaviour
         }    
     }
 
-    void OnTriggerEnter2D(Collider2D col) {
+    void OnCollisionEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
             Debug.Log("The player entered a trap, this is very bad");
             actionScript.performAction(col.gameObject);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

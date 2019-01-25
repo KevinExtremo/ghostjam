@@ -1,2 +1,3 @@
 # special macOS files
 *.DS_Store
+release/
