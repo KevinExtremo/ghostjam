@@ -21,7 +21,7 @@ public class TrapTrigger : MonoBehaviour
             Debug.Log("The player triggered a trap, bad things are going to happen");
             GameObject spriteObject = GetCompontentInChildren<SpriteRenderer>().gameObject;
             if (spriteObject == null) {
-                Debug.LogError("A trap was triggered that apparently has no sprite object :( please fix").
+                Debug.LogError("A trap was triggered that apparently has no sprite object :( please fix");
             }
             triggerScript.performTrigger(spriteObject);
         }
