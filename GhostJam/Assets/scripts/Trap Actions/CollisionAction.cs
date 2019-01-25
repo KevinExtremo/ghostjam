@@ -5,6 +5,6 @@ using UnityEngine;
 public class CollisionAction : ActionScript
 {
     public void performAction(GameObject gm) {
-        
+        GameState.gameState = GameState.State.GameOver;
     }
 }

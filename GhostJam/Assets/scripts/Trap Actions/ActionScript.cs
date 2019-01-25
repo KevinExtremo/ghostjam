@@ -5,6 +5,6 @@ using UnityEngine;
 public class ActionScript : MonoBehaviour
 {
     public void performAction(GameObject gm) {
-        Debug.Log("Implement action to perform");
+        Debug.LogError("Please dont use this, make your own!");
     }
 }
