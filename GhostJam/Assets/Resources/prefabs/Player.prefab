@@ -175,10 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormalY: -20
-  gravityModifier: 0.1
-  maxSpeed: 7
-  jumpTakeOffSpeed: 7
-  crouchMaxSpeed: 2
+  gravityModifier: 1
+  maxSpeed: 21
+  jumpTakeOffSpeed: 21
+  crouchMaxSpeed: 7
 --- !u!50 &1236474987030113337
 Rigidbody2D:
   serializedVersion: 4
@@ -194,7 +194,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.01
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
