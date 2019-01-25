@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerPlatformerController : PhysicsObject
 {
 
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
+    public float crouchMaxSpeed = 2;
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
