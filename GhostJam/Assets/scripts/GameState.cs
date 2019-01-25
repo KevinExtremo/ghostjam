@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameState : MonoBehaviour
 {
-    public List<Trap> traps;
+    public List<GameObject> traps;
     public List<StoryItem> storyItems;
     public static State gameState = State.Running;
     public GameObject GameOverText;
