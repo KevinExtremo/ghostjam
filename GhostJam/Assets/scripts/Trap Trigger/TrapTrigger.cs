@@ -9,7 +9,7 @@ public class TrapTrigger : MonoBehaviour
     private BoxCollider2D collider;
 
     void Awake() {
-        collider = gameObject.GetComponent(typeof(BoxCollider2D)) as BoxCollider2D;
+        collider = gameObject.GetComponent<BoxCollider2D>();
 
         if (collider == null) {
             Debug.LogError("A trap object must have a collider attached");
@@ -19,7 +19,7 @@ public class TrapTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
             Debug.Log("The player triggered a trap, bad things are going to happen");
-            GameObject spriteObject = GetCompontentInChildren<SpriteRenderer>().gameObject;
+            GameObject spriteObject = GetComponentInChildren<SpriteRenderer>().gameObject;
             if (spriteObject == null) {
                 Debug.LogError("A trap was triggered that apparently has no sprite object :( please fix");
             }
