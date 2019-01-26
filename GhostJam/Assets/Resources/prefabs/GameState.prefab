@@ -49,4 +49,4 @@ MonoBehaviour:
   GameOverText: {fileID: 0}
   GameWonText: {fileID: 0}
   Player: {fileID: 0}
-  PlayerStartPosition: {x: 0, y: 0, z: 0}
+  PlayerStartPosition: {x: 4, y: -17.5, z: 0}
