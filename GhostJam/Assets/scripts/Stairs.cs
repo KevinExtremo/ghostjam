@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stairs : MonoBehaviour
 {
-    public Vector3 targetLocation;
+    public Transform targetLocation;
     public bool isBottom;
     public BoxCollider2D boxCollider;
 

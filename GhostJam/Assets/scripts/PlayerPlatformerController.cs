@@ -157,7 +157,7 @@ public class PlayerPlatformerController : PhysicsObject
             }
             else
             {
-                transform.position = CurrentStair.targetLocation; 
+                transform.position = CurrentStair.targetLocation.position; 
                 isClimbingStairs = false;
                 animator.SetBool("isClimbingStairs", isClimbingStairs);
             }            
