@@ -11,7 +11,10 @@ public class FallTrigger : TriggerScript
         base.performTrigger(gm);
 
         Rigidbody2D rig = gm.AddComponent<Rigidbody2D>();
+        rig.gravityScale = 0;
+        
+        PhysicsObject phyObj = gm.AddComponent<PhysicsObject>();
 
-        rig.gravityScale = this.gravityScale;
+        phyObj.gravityModifier = this.gravityScale;
     }
 }
