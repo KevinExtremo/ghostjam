@@ -797,16 +797,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1093287902, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1093287902, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6979349540174280821, guid: 63dc102c5a1a6044786b0debef421f83,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093287904, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
+      propertyPath: m_Offset.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093287904, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
+      propertyPath: m_Offset.y
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093287904, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 579615557264234043, guid: 63dc102c5a1a6044786b0debef421f83,
         type: 3}
