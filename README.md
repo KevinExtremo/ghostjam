@@ -1,6 +1,6 @@
 # ghostjam
 
-# Traps
+## Traps
 
 * [ ] Kühlschrank 
     - Die obere Tür des Kühlschranks ist geöffnet und man muss unten durch kriechen
@@ -24,3 +24,8 @@
     - Ein Staubsauger jagt dem Spieler hinter her und dieser muss durch Springen diesem ausweichen (vielleicht hin und her und mit Knopf Puzzle kombiniert?)
 * [ ] Truhe
     - Die Truhe löst den Geist aus und wenn nicht alle Objekte vom Spieler eingesammelt wurden, so stirbt der Spieler
+
+## StoryItems
+
+* [ ] Bookshelf
+    - A old picture ...
