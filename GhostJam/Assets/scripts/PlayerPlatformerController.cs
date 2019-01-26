@@ -49,4 +49,10 @@ public class PlayerPlatformerController : PhysicsObject
 
         targetVelocity = move * maxSpeed;
     }
+
+    public new void FixedUpdate()
+    {
+        base.FixedUpdate();
+        transform.rotation = Quaternion.identity;
+    }
 }
