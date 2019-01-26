@@ -17,14 +17,22 @@ public class PlayerPlatformerController : PhysicsObject
     private int currentStairTicks = 0;
     private bool isJumping = false;
     private bool inJump = false;
+    public bool isCrawling = false;
 
     private bool isClimbingStairs = false;
+
+    private Vector2 colliderOffsetStanding = new Vector2(-0.025f,0.0f);
+    private Vector2 colliderScaleStanding = new Vector2(1.0f, 2.5f);
+    private Vector2 colliderOffsetCrawling = new Vector2(0.1f, 0.0f);
+    private Vector2 colliderScaleCrawling = new Vector2(2.5f, 1.5f);
+    public Vector3 heightDiffCrawling;
 
     public Stairs CurrentStair { get; set; }
 
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private CapsuleCollider2D collider;
     
 
     // Use this for initialization
@@ -32,6 +40,8 @@ public class PlayerPlatformerController : PhysicsObject
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        collider = GetComponent<CapsuleCollider2D>();
+
     }
 
     protected override void ComputeVelocity()
@@ -47,7 +57,7 @@ public class PlayerPlatformerController : PhysicsObject
         #endregion jumpEnd
 
         #region stairs
-        if(Input.GetAxis("Vertical") > 0 && CurrentStair != null)
+        if(Input.GetAxis("Vertical") > 0.0f && CurrentStair != null)
         {
             isClimbingStairs = true;
             animator.SetBool("isClimbingStairs", isClimbingStairs);
@@ -96,6 +106,27 @@ public class PlayerPlatformerController : PhysicsObject
         }
         #endregion jumping
 
+        #region crawling
+        if(Input.GetAxis("Vertical") < 0.0f && !isCrawling)
+        {
+            isCrawling = true;
+            animator.SetBool("isCrawling", isCrawling);
+            collider.direction = CapsuleDirection2D.Horizontal;
+            collider.offset = colliderOffsetCrawling;
+            collider.size = colliderScaleCrawling;
+            transform.position += heightDiffCrawling;
+        }
+        else if(Input.GetAxis("Vertical") >= 0.0f && isCrawling)
+        {
+            isCrawling = false;
+            animator.SetBool("isCrawling", isCrawling);
+            collider.direction = CapsuleDirection2D.Vertical;
+            collider.offset = colliderOffsetStanding;
+            collider.size = colliderScaleStanding;
+            transform.position -= heightDiffCrawling;
+        }
+        #endregion crawling
+
         #region xMovement
         Vector2 move = Vector2.zero;
         move.x = Input.GetAxis("Horizontal");
@@ -133,7 +164,7 @@ public class PlayerPlatformerController : PhysicsObject
         }
         else
         {
-            base.FixedUpdate();
+            base.FixedUpdate();            
             transform.rotation = Quaternion.identity;
         }
     }
