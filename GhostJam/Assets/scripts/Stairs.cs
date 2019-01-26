@@ -8,9 +8,8 @@ public class Stairs : MonoBehaviour
     public bool isBottom;
     public BoxCollider2D boxCollider;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        var col = collision.collider.gameObject;
         if(col.CompareTag("Player"))
         {
             var playerController = col.GetComponent<PlayerPlatformerController>();
@@ -18,9 +17,8 @@ public class Stairs : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D col)
     {
-        var col = collision.collider.gameObject;
         if (col.CompareTag("Player"))
         {
             var playerController = col.GetComponent<PlayerPlatformerController>();
