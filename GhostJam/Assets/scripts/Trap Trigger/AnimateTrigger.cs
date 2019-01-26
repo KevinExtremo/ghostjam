@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class AnimateTrigger : TriggerScript
 {
-    public Animation animation;
-
     public override void performTrigger(GameObject gm) {
-        base.performTrigger(gm);
 
-        animation.Play();
+        base.performTrigger(gm);
+        
+        Animation anim = gm.GetComponentInChildren<Animation>();
+        anim.Play();
     }
 }
