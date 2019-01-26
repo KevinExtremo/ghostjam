@@ -18,6 +18,8 @@ public class Krohnleuchter : TrapController
     private Vector3 positionTwo;
     private Vector3 positionThree;
 
+    private Vector3 lightPosition;
+
     private bool triggered = false;
 
     private bool animationStart = false;
@@ -30,6 +32,7 @@ public class Krohnleuchter : TrapController
         positionTwo = spriteTwo.gameObject.transform.position;
         positionThree = spriteThree.gameObject.transform.position;
 
+        lightPosition = this.gameObject.GetComponentInChildren<Light>().gameObject.transform.position;
 
         boxOne = spriteOne.GetComponent<BoxCollider2D>();
         boxTwo = spriteTwo.GetComponent<BoxCollider2D>();
@@ -45,6 +48,7 @@ public class Krohnleuchter : TrapController
 
         if (triggered && !animationStart) {
             if (phyObj.isGrounded()) {
+                this.gameObject.GetComponentInChildren<Light>().enabled = false;
                 animationStart = true;
                 animationStartTime = Time.time;
                 spriteOne.SetActive(false);
@@ -55,7 +59,7 @@ public class Krohnleuchter : TrapController
         }
 
         if (animationStart && !animationFinished) {
-            if (Time.time - animationStartTime > .3) {
+            if (Time.time - animationStartTime > .2) {
                 boxTwo.enabled = false;
                 boxThree.enabled = true;
                 spriteTwo.SetActive(false);
@@ -88,5 +92,9 @@ public class Krohnleuchter : TrapController
         animationStart = false;
         animationFinished = false;
         animationStartTime = Time.time;
+
+        Light light = this.gameObject.GetComponentInChildren<Light>();
+        light.enabled = true;
+        light.gameObject.transform.position = lightPosition;
     }
 }
