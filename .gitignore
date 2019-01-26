@@ -1,3 +1,8 @@
 # special macOS files
 *.DS_Store
+
+# the build folder
 release/
+
+# VS Code settings etc.
+*.vscode/
