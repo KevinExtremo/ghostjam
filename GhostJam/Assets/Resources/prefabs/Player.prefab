@@ -394,8 +394,9 @@ MonoBehaviour:
   minGroundNormalY: -20
   gravityModifier: 1
   maxSpeed: 21
-  jumpTakeOffSpeed: 21
+  jumpTakeOffSpeed: 17
   crouchMaxSpeed: 7
+  tickTilTakeOff: 60
 --- !u!50 &1236474987030113337
 Rigidbody2D:
   serializedVersion: 4
