@@ -309,6 +309,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7149006263836780997, guid: dc691dac10f7ff088ac75c663c3f718d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc691dac10f7ff088ac75c663c3f718d, type: 3}
 --- !u!4 &3175429375946153123 stripped
@@ -328,11 +333,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "K\xFChlschrank"
-      objectReference: {fileID: 0}
-    - target: {fileID: 9133782367662172404, guid: fe3f31628c2278756ad2f3e72541d636,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9133782367662172406, guid: fe3f31628c2278756ad2f3e72541d636,
         type: 3}
