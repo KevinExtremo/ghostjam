@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57e317fe067c1f6e98bff4f69eb47ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerScript: {fileID: 0}
 --- !u!1001 &5851621664947694650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 3780422542542245110, guid: 96c443dda0f67db489a3eebfb024acfc,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c443dda0f67db489a3eebfb024acfc, type: 3}

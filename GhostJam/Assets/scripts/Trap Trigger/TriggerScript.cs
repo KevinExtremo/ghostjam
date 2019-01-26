@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class TriggerScript : MonoBehaviour
 {
+    public AudioClip clip;
+
+    private float startTime;
+
     public virtual void performTrigger(GameObject gm) {
-        Debug.LogError("Please dont use me, implement your own!");
+        if (this.clip != null) {
+            AudioSource audio = gm.AddComponent<AudioSource>();
+            audio.clip = this.clip;
+            audio.Play();
+        }
+        this.startTime = Time.time;
+    }
+
+    public float getTime() {
+        return startTime;
     }
 }

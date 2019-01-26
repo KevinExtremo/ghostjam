@@ -10,15 +10,15 @@ public class TrapAction : MonoBehaviour
     private BoxCollider2D collider;
 
     void Awake() {
-        collider = gameObject.GetComponent(typeof(BoxCollider2D)) as BoxCollider2D;
+        collider = gameObject.GetComponent<BoxCollider2D>();;
 
         if (collider == null) {
             Debug.LogError("A trap object must have a collider attached");
         }    
     }
 
-    void OnCollisionEnter2D(Collider2D col) {
-        if (col.gameObject.tag == "Player") {
+    void OnCollisionEnter2D(Collision2D col) {
+        if (col.collider.gameObject.tag == "Player") {
             Debug.Log("The player entered a trap, this is very bad");
             actionScript.performAction(col.gameObject);
         }

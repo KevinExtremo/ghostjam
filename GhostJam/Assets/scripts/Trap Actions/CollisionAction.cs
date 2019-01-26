@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CollisionAction : ActionScript
 {
-    public void performAction(GameObject gm) {
+    public override void performAction(GameObject gm) {
+        base.performAction(gm);
+        
         GameState.gameState = GameState.State.GameOver;
     }
 }

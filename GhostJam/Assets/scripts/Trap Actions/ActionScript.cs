@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class ActionScript : MonoBehaviour
 {
-    public void performAction(GameObject gm) {
-        Debug.LogError("Please dont use this, make your own!");
+    public AudioClip clip;
+
+    private float startTime;
+
+    public virtual void performAction(GameObject gm) {
+        if (this.clip != null) {
+            AudioSource audio = gm.AddComponent<AudioSource>();
+            audio.clip = this.clip;
+            audio.Play();
+        }
+        this.startTime = Time.time;
+    }
+
+    public float getTime() {
+        return startTime;
     }
 }

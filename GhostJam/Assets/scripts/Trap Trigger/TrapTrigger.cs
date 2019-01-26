@@ -9,9 +9,9 @@ public class TrapTrigger : MonoBehaviour
     private BoxCollider2D collider;
 
     void Awake() {
-        collider = gameObject.GetComponent<BoxCollider2D>();
+        this.collider = gameObject.GetComponent<BoxCollider2D>();
 
-        if (collider == null) {
+        if (this.collider == null) {
             Debug.LogError("A trap object must have a collider attached");
         }    
     }
