@@ -112,6 +112,95 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &258902860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6304201045904163565, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_Name
+      value: Spiegel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253205409538507890, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_Name
+      value: Spiegel Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296922813937737932, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853469378661855728, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: triggerScript
+      value: 
+      objectReference: {fileID: 1915266820}
+    - target: {fileID: 6577508672595612781, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: actionScript
+      value: 
+      objectReference: {fileID: 1993527106}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14a478dcd72cfa446adc166942b0f132, type: 3}
 --- !u!1 &279819578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3253205409538507890, guid: 14a478dcd72cfa446adc166942b0f132,
@@ -130,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430e0bbeadc973fbc9908c648dd2178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
 --- !u!1001 &393313138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,6 +231,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Krohnleuchter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253205409538507890, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_Name
+      value: Krohnleuchter Object
       objectReference: {fileID: 0}
     - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
         type: 3}
@@ -211,7 +306,7 @@ PrefabInstance:
         type: 3}
       propertyPath: actionScript
       value: 
-      objectReference: {fileID: 1786503202}
+      objectReference: {fileID: 279819579}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14a478dcd72cfa446adc166942b0f132, type: 3}
 --- !u!1001 &467249646
@@ -224,7 +319,12 @@ PrefabInstance:
     - target: {fileID: 6304201045904163565, guid: 14a478dcd72cfa446adc166942b0f132,
         type: 3}
       propertyPath: m_Name
-      value: Fridge
+      value: "K\xFChlschrank"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253205409538507890, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: m_Name
+      value: "K\xFChlschrank Object"
       objectReference: {fileID: 0}
     - target: {fileID: 7056982602954039460, guid: 14a478dcd72cfa446adc166942b0f132,
         type: 3}
@@ -291,6 +391,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6577508672595612781, guid: 14a478dcd72cfa446adc166942b0f132,
+        type: 3}
+      propertyPath: actionScript
+      value: 
+      objectReference: {fileID: 1786503202}
     - target: {fileID: 3036206727457561210, guid: 14a478dcd72cfa446adc166942b0f132,
         type: 3}
       propertyPath: m_Enabled
@@ -306,11 +411,6 @@ PrefabInstance:
       propertyPath: actionScript
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6577508672595612781, guid: 14a478dcd72cfa446adc166942b0f132,
-        type: 3}
-      propertyPath: actionScript
-      value: 
-      objectReference: {fileID: 1786503202}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14a478dcd72cfa446adc166942b0f132, type: 3}
 --- !u!1 &1287209826
@@ -413,6 +513,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430e0bbeadc973fbc9908c648dd2178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+--- !u!1 &1915266819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6304201045904163565, guid: 14a478dcd72cfa446adc166942b0f132,
+    type: 3}
+  m_PrefabInstance: {fileID: 258902860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1915266820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915266819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e11d3fde3394adb8b762cad0fdf7e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  animation: {fileID: 0}
 --- !u!1 &1975841515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6304201045904163565, guid: 14a478dcd72cfa446adc166942b0f132,
@@ -431,3 +552,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b01e3685d22e8383299b12dcebd6cf83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  gravityScale: 0
+--- !u!1 &1993527104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3253205409538507890, guid: 14a478dcd72cfa446adc166942b0f132,
+    type: 3}
+  m_PrefabInstance: {fileID: 258902860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1993527106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993527104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59a33a9d4bcf94fa8738e54a38ac0c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  timeUntilDeadly: 0
