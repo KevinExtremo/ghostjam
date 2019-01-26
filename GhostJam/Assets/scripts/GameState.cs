@@ -9,6 +9,8 @@ public class GameState : MonoBehaviour
     public static State gameState = State.Running;
     public GameObject GameOverText;
     public GameObject GameWonText;
+    public GameObject Player;
+    public Vector3  PlayerStartPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +23,35 @@ public class GameState : MonoBehaviour
     {
         switch(gameState)
         {
-            case State.GameOver: //todo
+            case State.GameOver:
+                GameOverText.SetActive(true);
+                Player.SetActive(false);
+                if (Input.GetAxis("Submit") > 0) {
+                    ResetGame();
+                }
                 break;
-            case State.GameWon:  //todo
+            case State.GameWon:
+                GameWonText.SetActive(true);
+                Player.SetActive(false);
+                if (Input.GetAxis("Submit") > 0) {
+                    ResetGame();
+                }
                 break;
-            case State.Running:  //todo
+            case State.Running:
                 break;
         }
+    }
+
+    void ResetGame() {
+        foreach(GameObject trap in traps) {
+            TrapController control = trap.GetComponent<TrapController>();
+            control.Reset();
+        }
+        gameState = State.Running;
+        GameOverText.SetActive(false);
+        GameWonText.SetActive(false);
+        Player.transform.position = PlayerStartPosition;
+        Player.SetActive(true);
     }
 
     public enum State

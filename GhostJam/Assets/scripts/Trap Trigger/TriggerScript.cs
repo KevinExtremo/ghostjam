@@ -6,7 +6,7 @@ public class TriggerScript : MonoBehaviour
 {
     public AudioClip clip;
 
-    private float startTime;
+    private float startTime = 0.0f;
 
     public virtual void performTrigger(GameObject gm) {
         if (this.clip != null) {
