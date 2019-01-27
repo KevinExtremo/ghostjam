@@ -26,12 +26,12 @@ public class Staubsauger : TrapController
         lastSwitchTime = Time.time;
         vacuum.transform.position = startPosition;
         vacuum.GetComponent<SpriteRenderer>().flipX = true;
-        if (reverse) {
-            GameObject light = vacuum.GetComponentInChildren<Light>().gameObject;
-            Vector3 oldPosition = light.transform.position;
-            Vector3 newPosition = oldPosition - new Vector3(1, 0, 0);
-            light.transform.position = newPosition;
-        }
+        // if (reverse) {
+        //     GameObject light = vacuum.GetComponentInChildren<Light>().gameObject;
+        //     Vector3 oldPosition = light.transform.position;
+        //     Vector3 newPosition = oldPosition + new Vector3(10, 0, 0);
+        //     light.transform.position = newPosition;
+        // }
         Vector2 velocity = new Vector2(speed, speed);
         phyObj.SetTargetVelocity(velocity);
         reverse = false;
@@ -44,20 +44,20 @@ public class Staubsauger : TrapController
                 Vector2 velocity = new Vector2(speed, speed);
                 phyObj.SetTargetVelocity(velocity);
                 vacuum.GetComponent<SpriteRenderer>().flipX = true;
-                GameObject light = vacuum.GetComponentInChildren<Light>().gameObject;
-                Vector3 oldPosition = light.transform.position;
-                Vector3 newPosition = oldPosition - new Vector3(1, 0, 0);
-                light.transform.position = newPosition;
+                // GameObject light = vacuum.GetComponentInChildren<Light>().gameObject;
+                // Vector3 oldPosition = light.transform.position;
+                // Vector3 newPosition = oldPosition + new Vector3(-2, 0, 0);
+                // light.transform.position = newPosition;
                 lastSwitchTime = Time.time;
                 reverse = false;
             } else {
                 Vector2 velocity = new Vector2(-speed, -speed);
                 phyObj.SetTargetVelocity(velocity);
                 vacuum.GetComponent<SpriteRenderer>().flipX = false;
-                GameObject light = vacuum.GetComponentInChildren<Light>().gameObject;
-                Vector3 oldPosition = light.transform.position;
-                Vector3 newPosition = oldPosition + new Vector3(1, 0, 0);
-                light.transform.position = newPosition;
+                // GameObject light = vacuum.GetComponentInChildren<Light>().gameObject;
+                // Vector3 oldPosition = light.transform.position;
+                // Vector3 newPosition = oldPosition - new Vector3(2, 0, 0);
+                // light.transform.position = newPosition;
                 lastSwitchTime = Time.time;
                 reverse = true;
             }
