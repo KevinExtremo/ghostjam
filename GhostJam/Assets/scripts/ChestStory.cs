@@ -27,7 +27,7 @@ public class ChestStory : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(!key.gameObject.activeSelf)
+            if(key.gameObject.active)
             {
                 collision.GetComponent<PlayerPlatformerController>().StoryTextBoxController.SetNewStoryItem(closed);
             }
