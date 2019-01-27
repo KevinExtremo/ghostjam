@@ -2,7 +2,7 @@
 // using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour
+public class Chest : TrapController
 {
 
     public GameObject spriteOpen, spriteClosed;
@@ -24,21 +24,21 @@ public class Chest : MonoBehaviour
     }
     public Light shine;
 
-    /*
+    
     void Awake() {
-
+        Reset();
     }
-    */
+    
 
-    public void open(){
+    public void Open(){
         this.isOpen = true;
     }
 
-    public void close(){
+    public void Close(){
         this.isOpen = false;
     }
 
-    public void reset(){
+    public override void Reset(){
         this.isOpen = false;
     }
 
