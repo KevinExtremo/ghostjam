@@ -5,6 +5,6 @@ using UnityEngine;
 public class Waschmaschine : TrapController
 {
     public override void Reset() {
-        this.gameObject.GetComponentInChildren<BoxCollider2D>().SetActive(true);
+        this.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = true;
     }
 }
