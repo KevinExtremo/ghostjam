@@ -7,7 +7,7 @@ public class StoryTextBoxController : MonoBehaviour
 {
     public GameObject TextField;
     public Text TextComp;
-    public StoryItem StoryItem { get; private set; }
+    public StoryItem storyItem { get; private set; }
     public PlayerPlatformerController playerController;
     public StoryItem InitialItem;
 
@@ -18,13 +18,12 @@ public class StoryTextBoxController : MonoBehaviour
     private void Awake()
     {
         SetNewStoryItem(InitialItem);
-        updateText();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (StoryItem != null)
+        if (storyItem != null)
         {
             if (Input.GetAxis("Use") > 0.0f && passedTime >= pressDelay)
             {
@@ -40,10 +39,11 @@ public class StoryTextBoxController : MonoBehaviour
 
     private void updateText()
     {
-        TextComp.text = StoryItem.NextText();
+        TextComp.text = storyItem.NextText();
         if (TextComp.text == "")
         {
-            StoryItem = null;
+            storyItem.gameObject.SetActive(false);
+            storyItem = null;
             TextField.SetActive(false);
             playerController.enabled = true;
         }
@@ -51,14 +51,14 @@ public class StoryTextBoxController : MonoBehaviour
 
     public void SetNewStoryItem(StoryItem item)
     {
-        StoryItem = item;
+        storyItem = item;
         playerController.enabled = false;
-        
+        TextField.SetActive(true);
+        updateText();        
     }
 
     public void Reset()
     {
         SetNewStoryItem(InitialItem);
-        updateText();
     }
 }
