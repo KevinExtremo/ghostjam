@@ -47,6 +47,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   storyItems: []
   StoryTextBoxController: {fileID: 0}
   GameOverText: {fileID: 0}
