@@ -6,6 +6,7 @@ public class GameState : MonoBehaviour
 {
     public List<GameObject> traps;
     public List<StoryItem> storyItems;
+    public StoryTextBoxController StoryTextBoxController;
     public static State gameState = State.Running;
     public GameObject GameOverText;
     public GameObject GameWonText;
@@ -47,6 +48,12 @@ public class GameState : MonoBehaviour
             TrapController control = trap.GetComponent<TrapController>();
             control.Reset();
         }
+        foreach(var storyitem in storyItems)
+        {
+            storyitem.Reset();
+        }
+        StoryTextBoxController.Reset();
+
         gameState = State.Running;
         GameOverText.SetActive(false);
         GameWonText.SetActive(false);
