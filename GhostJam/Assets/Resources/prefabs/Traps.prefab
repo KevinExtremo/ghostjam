@@ -476,6 +476,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 147549986062468610, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147549986062468610, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147549985314148737, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
