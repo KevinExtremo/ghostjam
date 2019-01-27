@@ -6,7 +6,7 @@ public class PhysicsObject : MonoBehaviour
 {
 
     public float minGroundNormalY = -10.25f;
-    public float gravityModifier = 1f;
+    public float gravityModifier = 2f;
 
     protected Vector2 targetVelocity;
     protected bool grounded;
