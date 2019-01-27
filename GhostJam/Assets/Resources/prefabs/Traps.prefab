@@ -294,20 +294,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1732907028582442410}
     m_Modifications:
-    - target: {fileID: 147549985551037564, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
-        type: 3}
-      propertyPath: m_Name
-      value: Wasserhahn
-      objectReference: {fileID: 0}
     - target: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 258.4968
+      value: 189.3
       objectReference: {fileID: 0}
     - target: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32.14666
+      value: 22.9
       objectReference: {fileID: 0}
     - target: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
@@ -354,11 +349,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 147549985551037564, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_Name
+      value: Wasserhahn
+      objectReference: {fileID: 0}
+    - target: {fileID: 147549985882560757, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 147549985882560757, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 147549985314148767, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce2e8b7d8bc260260bc68419e9e6f04a, type: 3}
---- !u!1 &717817394660478879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 147549986062468608, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+--- !u!4 &717817395173506529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
     type: 3}
   m_PrefabInstance: {fileID: 863003310453131679}
   m_PrefabAsset: {fileID: 0}
@@ -368,9 +383,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 863003310453131679}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &717817395173506529 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+--- !u!1 &717817394660478879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 147549986062468608, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
     type: 3}
   m_PrefabInstance: {fileID: 863003310453131679}
   m_PrefabAsset: {fileID: 0}

@@ -36,7 +36,7 @@ public class StoryItem : MonoBehaviour
 
     public void Reset()
     {
-        enabled = true;
+        gameObject.SetActive(true);
         iterator = 0;
     }
 }
