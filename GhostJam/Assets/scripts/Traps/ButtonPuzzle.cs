@@ -31,7 +31,7 @@ public class ButtonPuzzle : TrapController
                 previousButton = "Blau";
                 break;
             case "Gelb":
-                if (previousButton != "Gelb") {
+                if (previousButton != "Blau") {
                     GameState.gameState = GameState.State.GameOver;
                 }
                 previousButton = "Gelb";
@@ -42,6 +42,7 @@ public class ButtonPuzzle : TrapController
                 }
                 previousButton = "Rot";
                 finished = true;
+                this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 break;
         }
     }
@@ -51,6 +52,7 @@ public class ButtonPuzzle : TrapController
     }
 
     public override void Reset() {
+        this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
         previousButton = "";
         finished = false;
     }
