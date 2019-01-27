@@ -8,7 +8,7 @@ public class Stairs : MonoBehaviour
     public bool isBottom;
     public BoxCollider2D boxCollider;
 
-    public static Vector3 playerTargetOffset = new Vector3(0.0f, -6.0f);
+    public static Vector3 playerTargetOffset = new Vector3(0.0f, -6.5f);
 
     void OnTriggerEnter2D(Collider2D col)
     {
