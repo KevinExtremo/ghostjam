@@ -262,7 +262,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -1.75}
-  m_SizeDelta: {x: 170, y: 20}
+  m_SizeDelta: {x: 180, y: 20}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!223 &1946142109
 Canvas:
@@ -431,14 +431,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormalY: -20
-  gravityModifier: 1
+  gravityModifier: 2
   maxSpeed: 21
   jumpTakeOffSpeed: 17
-  crouchMaxSpeed: 7
+  crouchMaxSpeed: 12
   ticksTilTakeOff: 40
   TicksOfStairClimbing: 120
   isCrawling: 0
   lightCone: {fileID: 18784251}
+  Textbox: {fileID: 1946142107}
   heightDiffCrawling: {x: 0, y: -2.4, z: 0}
 --- !u!50 &1236474987030113337
 Rigidbody2D:

@@ -19,6 +19,7 @@ public class PlayerPlatformerController : PhysicsObject
     private bool inJump = false;
     public bool isCrawling = false;
     public Light lightCone;
+    public GameObject Textbox;
 
     
 
@@ -122,6 +123,7 @@ public class PlayerPlatformerController : PhysicsObject
             collider.offset = colliderOffsetCrawling;
             collider.size = colliderScaleCrawling;
             transform.position += heightDiffCrawling;
+            Textbox.transform.position -= heightDiffCrawling;
         }
         else if(Input.GetAxis("Vertical") >= 0.0f && isCrawling)
         {
@@ -131,6 +133,8 @@ public class PlayerPlatformerController : PhysicsObject
             collider.offset = colliderOffsetStanding;
             collider.size = colliderScaleStanding;
             transform.position -= heightDiffCrawling;
+            Textbox.transform.position += heightDiffCrawling;
+
         }
         #endregion crawling
 
