@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &717817394660478880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717817394660478879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace1b8558a0e494ca9367de8707f4d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &717817394834133356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717817394834133355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cad39b6cd9894cb1a34c002159fa757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1091089098082692910
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +294,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1732907028582442410}
     m_Modifications:
+    - target: {fileID: 147549985551037564, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_Name
+      value: Wasserhahn
+      objectReference: {fileID: 0}
     - target: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -325,13 +354,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 147549985551037564, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
-        type: 3}
-      propertyPath: m_Name
-      value: Wasserhahn
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce2e8b7d8bc260260bc68419e9e6f04a, type: 3}
+--- !u!1 &717817394660478879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 147549986062468608, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+    type: 3}
+  m_PrefabInstance: {fileID: 863003310453131679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &717817394834133355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 147549985882560756, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+    type: 3}
+  m_PrefabInstance: {fileID: 863003310453131679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &717817395173506529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
@@ -405,6 +441,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1749430998379400933, guid: 1609fcee903d0de4eb46ee7fbbd1d88a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749430998379400933, guid: 1609fcee903d0de4eb46ee7fbbd1d88a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1609fcee903d0de4eb46ee7fbbd1d88a, type: 3}
 --- !u!4 &717817395652649373 stripped
@@ -428,12 +474,12 @@ PrefabInstance:
     - target: {fileID: 2378844937266228772, guid: bf7c9d79f468c4bad9458c37e0d21f42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.46
+      value: 145.8
       objectReference: {fileID: 0}
     - target: {fileID: 2378844937266228772, guid: bf7c9d79f468c4bad9458c37e0d21f42,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.33
+      value: 49.1
       objectReference: {fileID: 0}
     - target: {fileID: 2378844937266228772, guid: bf7c9d79f468c4bad9458c37e0d21f42,
         type: 3}
@@ -479,16 +525,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6565593787620513300, guid: bf7c9d79f468c4bad9458c37e0d21f42,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.82745105
-      objectReference: {fileID: 0}
-    - target: {fileID: 6565593787620513300, guid: bf7c9d79f468c4bad9458c37e0d21f42,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.10980393
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf7c9d79f468c4bad9458c37e0d21f42, type: 3}

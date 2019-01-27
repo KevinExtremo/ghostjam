@@ -649,6 +649,11 @@ PrefabInstance:
       objectReference: {fileID: 717817396461576849}
     - target: {fileID: 1698664039030533301, guid: 5143b6512c126af6082d1fc729d0e1b4,
         type: 3}
+      propertyPath: traps.Array.data[6]
+      value: 
+      objectReference: {fileID: 717817396461576851}
+    - target: {fileID: 1698664039030533301, guid: 5143b6512c126af6082d1fc729d0e1b4,
+        type: 3}
       propertyPath: StoryTextBoxController
       value: 
       objectReference: {fileID: 5237738651769255550}
@@ -882,6 +887,12 @@ GameObject:
 --- !u!1 &717817396461576850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 717817394989568289, guid: 63dc102c5a1a6044786b0debef421f83,
+    type: 3}
+  m_PrefabInstance: {fileID: 717817396461576847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &717817396461576851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 315424572292841169, guid: 63dc102c5a1a6044786b0debef421f83,
     type: 3}
   m_PrefabInstance: {fileID: 717817396461576847}
   m_PrefabAsset: {fileID: 0}
