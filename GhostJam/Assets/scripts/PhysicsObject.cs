@@ -6,7 +6,7 @@ public class PhysicsObject : MonoBehaviour
 {
 
     public float minGroundNormalY = -10.25f;
-    public float gravityModifier = 1f;
+    public float gravityModifier = 2f;
 
     protected Vector2 targetVelocity;
     protected bool grounded;
@@ -104,6 +104,10 @@ public class PhysicsObject : MonoBehaviour
         }
 
         rb2d.position = rb2d.position + move.normalized * distance;
+    }
+
+    public void SetVelocity(Vector2 velocity) {
+        velocity = velocity;
     }
 
     public bool isGrounded() {

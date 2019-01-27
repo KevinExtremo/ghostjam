@@ -9,6 +9,7 @@ public class Krohnleuchter : TrapController
     public GameObject spriteThree;
     public PhysicsObject phyObj;
     public GameObject trigger;
+    public Light light;
 
     private BoxCollider2D boxOne;
     private BoxCollider2D boxTwo;
@@ -32,7 +33,7 @@ public class Krohnleuchter : TrapController
         positionTwo = spriteTwo.gameObject.transform.position;
         positionThree = spriteThree.gameObject.transform.position;
 
-        lightPosition = this.gameObject.GetComponentInChildren<Light>().gameObject.transform.position;
+        lightPosition = light.transform.position;
 
         boxOne = spriteOne.GetComponent<BoxCollider2D>();
         boxTwo = spriteTwo.GetComponent<BoxCollider2D>();

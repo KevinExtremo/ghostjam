@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Stairs : MonoBehaviour
 {
-    public Vector3 targetLocation;
+    public Transform targetLocation;
     public bool isBottom;
     public BoxCollider2D boxCollider;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public static Vector3 playerTargetOffset = new Vector3(0.0f, -6.5f);
+
+    void OnTriggerEnter2D(Collider2D col)
     {
-        var col = collision.collider.gameObject;
         if(col.CompareTag("Player"))
         {
             var playerController = col.GetComponent<PlayerPlatformerController>();
@@ -18,13 +19,23 @@ public class Stairs : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D col)
     {
-        var col = collision.collider.gameObject;
         if (col.CompareTag("Player"))
         {
             var playerController = col.GetComponent<PlayerPlatformerController>();
             playerController.CurrentStair = null;
         }
+    }
+
+    public Vector3 targetPosition()
+    {
+        if (targetLocation == null)
+        {
+            Debug.LogError("No target Transform attached to the stair!!");
+            return Vector3.zero;
+        }
+
+        return targetLocation.position + playerTargetOffset;
     }
 }
