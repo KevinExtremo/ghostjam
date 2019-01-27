@@ -296,6 +296,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.68512, y: 18.431658}
   m_EdgeRadius: 0
+--- !u!1 &818463504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 717817395652649375, guid: 63dc102c5a1a6044786b0debef421f83,
+    type: 3}
+  m_PrefabInstance: {fileID: 717817396461576847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1057546969
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +618,11 @@ PrefabInstance:
       objectReference: {fileID: 4138531440148257729}
     - target: {fileID: 1698664039030533301, guid: 5143b6512c126af6082d1fc729d0e1b4,
         type: 3}
+      propertyPath: traps.Array.data[2]
+      value: 
+      objectReference: {fileID: 818463504}
+    - target: {fileID: 1698664039030533301, guid: 5143b6512c126af6082d1fc729d0e1b4,
+        type: 3}
       propertyPath: GameOverText
       value: 
       objectReference: {fileID: 174494406}
@@ -717,11 +728,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8590481830065547680, guid: 63dc102c5a1a6044786b0debef421f83,
-        type: 3}
-      propertyPath: m_Name
-      value: "K\xFChlschrank"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
