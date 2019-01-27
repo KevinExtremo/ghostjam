@@ -26,6 +26,10 @@ public class PhysicsObject : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    void Awake() {
+        targetVelocity = Vector2.zero;
+    }
+
     void Start()
     {
         contactFilter.useTriggers = false;
@@ -35,13 +39,11 @@ public class PhysicsObject : MonoBehaviour
 
     void Update()
     {
-        targetVelocity = Vector2.zero;
         ComputeVelocity();
     }
 
     protected virtual void ComputeVelocity()
     {
-
     }
 
     protected void FixedUpdate()
@@ -106,8 +108,8 @@ public class PhysicsObject : MonoBehaviour
         rb2d.position = rb2d.position + move.normalized * distance;
     }
 
-    public void SetVelocity(Vector2 velocity) {
-        velocity = velocity;
+    public void SetTargetVelocity(Vector2 velocity) {
+        targetVelocity = velocity;
     }
 
     public bool isGrounded() {
