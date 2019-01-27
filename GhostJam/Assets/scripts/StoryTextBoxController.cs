@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class StoryTextBoxController : MonoBehaviour
 {
-    public Text TextField;
+    public GameObject TextField;
+    public Text TextComp;
     public StoryItem StoryItem { get; private set; }
     public PlayerPlatformerController playerController;
     public StoryItem InitialItem;
 
+    public float pressDelay = 0.5f;
+
+    private float passedTime = 0.0f;
+
     private void Awake()
     {
-        StoryItem = InitialItem;
+        SetNewStoryItem(InitialItem);
+        updateText();
     }
 
     // Update is called once per frame
@@ -20,16 +26,26 @@ public class StoryTextBoxController : MonoBehaviour
     {
         if (StoryItem != null)
         {
-            if (Input.GetAxis("Use") > 0.0f)
+            if (Input.GetAxis("Use") > 0.0f && passedTime >= pressDelay)
             {
-                TextField.text = StoryItem.NextText();
-                if (TextField.text == "")
-                {
-                    StoryItem = null;
-                    TextField.enabled = false;
-                    playerController.enabled = true;
-                }
+                updateText();
+                passedTime = 0.0f;
             }
+            else
+            {
+                passedTime += Time.deltaTime;
+            }
+        }
+    }
+
+    private void updateText()
+    {
+        TextComp.text = StoryItem.NextText();
+        if (TextComp.text == "")
+        {
+            StoryItem = null;
+            TextField.SetActive(false);
+            playerController.enabled = true;
         }
     }
 
@@ -37,10 +53,12 @@ public class StoryTextBoxController : MonoBehaviour
     {
         StoryItem = item;
         playerController.enabled = false;
+        
     }
 
     public void Reset()
     {
-        StoryItem = InitialItem;
+        SetNewStoryItem(InitialItem);
+        updateText();
     }
 }
