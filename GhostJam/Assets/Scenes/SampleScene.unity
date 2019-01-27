@@ -203,7 +203,7 @@ PrefabInstance:
     - target: {fileID: 542885272336477879, guid: f6691798f6500581b9f6335abb987f67,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40.4
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 542885272336477879, guid: f6691798f6500581b9f6335abb987f67,
         type: 3}
@@ -425,6 +425,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1163827047}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &983388532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4709645715682512642, guid: 2c3c2536c08b22d58828bb6a89385417,
+    type: 3}
+  m_PrefabInstance: {fileID: 1163827047}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983388530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6245fa68294ca849dba51f9230d96fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1057546969
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +490,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 24
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -502,7 +514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057546969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.23, y: -13.6, z: -20}
+  m_LocalPosition: {x: 8.23, y: -13.6, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1501664187}
@@ -524,7 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 1645127401}
   PlatformerController: {fileID: 1645127399}
-  Offset: {x: 0, y: 4, z: -20}
+  Offset: {x: 0, y: 4, z: -30}
 --- !u!1001 &1163827047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -793,7 +805,7 @@ PrefabInstance:
     - target: {fileID: 4665396416271956779, guid: 599c93407501598d09dbd10aae97dfad,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40.4
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4665396416271956779, guid: 599c93407501598d09dbd10aae97dfad,
         type: 3}
@@ -966,6 +978,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 12.41901
       objectReference: {fileID: 0}
+    - target: {fileID: 3132675031074581344, guid: a881396f6d2f8e04aa39a1e1ed71383e,
+        type: 3}
+      propertyPath: washingmachine
+      value: 
+      objectReference: {fileID: 983388532}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a881396f6d2f8e04aa39a1e1ed71383e, type: 3}
 --- !u!114 &1505988264 stripped

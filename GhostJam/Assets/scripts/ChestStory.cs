@@ -10,6 +10,7 @@ public class ChestStory : MonoBehaviour
     public Chest chest;
     public StoryItem key;
 
+    private PlayerPlatformerController player;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,10 @@ public class ChestStory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(player != null && player.enabled)
+        {
+            GameState.gameState = GameState.State.GameWon;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +39,7 @@ public class ChestStory : MonoBehaviour
             {
                 collision.GetComponent<PlayerPlatformerController>().StoryTextBoxController.SetNewStoryItem(open);
                 Ghost.SetActive(true);
+                player = collision.GetComponent<PlayerPlatformerController>();
             }
         }
     }
