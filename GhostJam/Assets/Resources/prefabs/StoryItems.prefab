@@ -1,0 +1,451 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3132675031074581344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642841210811116769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e847bb400633b54aa41077f2efb7f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapControllers: []
+--- !u!1 &3769677986984719211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3769677986984719212}
+  m_Layer: 0
+  m_Name: StoryItems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3769677986984719212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769677986984719211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3769677988730560890}
+  - {fileID: 3769677988436480312}
+  - {fileID: 3532909518195917825}
+  - {fileID: 6062756513763677977}
+  - {fileID: 5642841210811116798}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3769677988730560889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3769677988730560890}
+  - component: {fileID: 3769677988730560891}
+  m_Layer: 0
+  m_Name: InitialStoryItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3769677988730560890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769677988730560889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3769677986984719212}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3769677988730560891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769677988730560889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72bbc7f147ae6a49843b2d01f2fa8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StoryClues:
+  - This is my house now. I won't let a ghost get the better of me.
+--- !u!1001 &3331763131139435539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3769677986984719212}
+    m_Modifications:
+    - target: {fileID: 6950086415012839666, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_Name
+      value: Mainfuse - Fusebox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[0]
+      value: I should have a closer look at this.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[1]
+      value: It's the fusebox. Let me see...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[2]
+      value: Hmm...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[3]
+      value: I switched off the main fuse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[4]
+      value: There is a note. Tina was my 2nd and William my third.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bb189be1a57b3742a34224963e17ba8, type: 3}
+--- !u!1 &5642841210811116769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6950086415012839666, guid: 8bb189be1a57b3742a34224963e17ba8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3331763131139435539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5642841210811116798 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3331763131139435539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3769677987181107188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3769677986984719212}
+    m_Modifications:
+    - target: {fileID: 6950086415012839666, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_Name
+      value: Polaroit - Bathroom Mirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[0]
+      value: Wait a sec. What's that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[1]
+      value: What a nice old polaroit.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[2]
+      value: It must be the family of the former owner.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[3]
+      value: The kids from left to right girl and boy wear blue and yellow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[4]
+      value: There is a note. Tina was my 2nd and William my third.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bb189be1a57b3742a34224963e17ba8, type: 3}
+--- !u!4 &6062756513763677977 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3769677987181107188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5869528112532931820
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3769677986984719212}
+    m_Modifications:
+    - target: {fileID: 6950086415012839666, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_Name
+      value: Key - Winebarrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 53.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[0]
+      value: There seems to be something.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805052494185132822, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: StoryClues.Array.data[1]
+      value: There is an old rusty key behind the wine barrel.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bb189be1a57b3742a34224963e17ba8, type: 3}
+--- !u!4 &3532909518195917825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5869528112532931820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6062756512500437461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3769677986984719212}
+    m_Modifications:
+    - target: {fileID: 6950086415012839666, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_Name
+      value: Photo - Bookshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bb189be1a57b3742a34224963e17ba8, type: 3}
+--- !u!4 &3769677988436480312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6950086415012839661, guid: 8bb189be1a57b3742a34224963e17ba8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6062756512500437461}
+  m_PrefabAsset: {fileID: 0}
