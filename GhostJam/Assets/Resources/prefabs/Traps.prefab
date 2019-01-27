@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151194328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 4, z: -51.92}
+  m_LocalPosition: {x: 2, y: 4, z: -44.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 717817395506626583}
@@ -42,9 +42,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.32007822, g: 1, b: 0.1509434, a: 1}
-  m_Intensity: 3
+  m_Intensity: 10
   m_Range: 50
-  m_SpotAngle: 28.176588
+  m_SpotAngle: 6
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -401,6 +401,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1732907028582442410}
     m_Modifications:
+    - target: {fileID: 147549985551037564, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_Name
+      value: Wasserhahn
+      objectReference: {fileID: 0}
     - target: {fileID: 147549985551037566, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -456,7 +461,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-
+    - target: {fileID: 147549985882560757, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 147549985882560757, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 147549985314148767, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
         type: 3}
       propertyPath: m_IsActive
@@ -477,28 +491,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 76c760659b759594b8c6d15ffc73768a, type: 2}
-
-    - target: {fileID: 147549985551037564, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
-        type: 3}
-      propertyPath: m_Name
-      value: Wasserhahn
-      objectReference: {fileID: 0}
-    - target: {fileID: 147549985882560757, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 22.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 147549985882560757, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 147549985314148767, guid: ce2e8b7d8bc260260bc68419e9e6f04a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce2e8b7d8bc260260bc68419e9e6f04a, type: 3}
 --- !u!4 &717817395173506529 stripped
@@ -704,12 +696,12 @@ PrefabInstance:
     - target: {fileID: 6382158875949302161, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6382158875949302161, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.5
+      value: 45.8
       objectReference: {fileID: 0}
     - target: {fileID: 6382158875949302161, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
@@ -758,8 +750,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6382158875785621181, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382158875785621181, guid: d3afd38706f0196fa920d423da3f51dd,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.3
+      value: -23.23
       objectReference: {fileID: 0}
     - target: {fileID: 6382158875949302166, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
@@ -769,7 +766,7 @@ PrefabInstance:
     - target: {fileID: 6382158875949302166, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
       propertyPath: time
-      value: 7.8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6382158875785621168, guid: d3afd38706f0196fa920d423da3f51dd,
         type: 3}
