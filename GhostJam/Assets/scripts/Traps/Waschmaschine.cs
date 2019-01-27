@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class Waschmaschine : TrapController
 {
+    public ParticleSystem ParticleSystem;
+    public BoxCollider2D boxCollider2D;
+
     public override void Reset() {
-        this.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = true;
+        boxCollider2D.enabled = true;
+        ParticleSystem.loop = true;
+    }
+
+    public void Disable()
+    {
+        boxCollider2D.enabled = false;
+        ParticleSystem.loop = false;
     }
 }
