@@ -106,6 +106,10 @@ public class PhysicsObject : MonoBehaviour
         rb2d.position = rb2d.position + move.normalized * distance;
     }
 
+    public void SetVelocity(Vector2 velocity) {
+        velocity = velocity;
+    }
+
     public bool isGrounded() {
         return grounded;
     }
