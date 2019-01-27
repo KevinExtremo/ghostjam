@@ -2,17 +2,17 @@
 
 # Traps
 
-* [ ] Kühlschrank 
+* [x] Kühlschrank 
     - Die obere Tür des Kühlschranks ist geöffnet und man muss unten durch kriechen
-* [ ] Krohnleuchter
+* [x] Krohnleuchter
     - Der Spieler muss unter einem Tisch kriechen um den fallenden Krohnleuchter auszuweichen
-* [ ] Spiegel
+* [x] Spiegel
     - Der Spiegel fällt um und der Spiele muss schnell genug an ihm vorbei laufen
-* [ ] Kamin
+* [x] Kamin
     + Der Kamin spuckt Feuer und der Spieler muss über das Feuer springen um ihm auszuweichen
 * [ ] Laufender Wasserhahn
     - Die Tür zum Raum ist geschlossen und läuft langsam voll mit Wasser. Der Wasserhahn muss schnell geschlossen werden oder man ertrinkt
-* [ ] Gemälde
+* [x] Gemälde
     - Das Gemälde hat zwei große Augen und man kann nur während es blinzelt am Gemälde vorbei gehen
 * [ ] Komode
     - Fällt runter und liegt aber in einem sehr dunklen Raum(Schlafzimmer) und muss mit einem Sprung ausgewichen werden
