@@ -47,6 +47,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   storyItems: []
   GameOverText: {fileID: 0}
   GameWonText: {fileID: 0}
