@@ -659,6 +659,11 @@ PrefabInstance:
       objectReference: {fileID: 717817396461576851}
     - target: {fileID: 1698664039030533301, guid: 5143b6512c126af6082d1fc729d0e1b4,
         type: 3}
+      propertyPath: traps.Array.data[7]
+      value: 
+      objectReference: {fileID: 2005472858219796205}
+    - target: {fileID: 1698664039030533301, guid: 5143b6512c126af6082d1fc729d0e1b4,
+        type: 3}
       propertyPath: StoryTextBoxController
       value: 
       objectReference: {fileID: 5237738651769255550}
@@ -782,21 +787,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 717817395470315323, guid: 63dc102c5a1a6044786b0debef421f83,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 45.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 717817395470315323, guid: 63dc102c5a1a6044786b0debef421f83,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 717817395470315324, guid: 63dc102c5a1a6044786b0debef421f83,
-        type: 3}
-      propertyPath: time
-      value: 11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63dc102c5a1a6044786b0debef421f83, type: 3}
 --- !u!1 &717817396461576848 stripped
@@ -897,6 +887,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbb3c63cedfdd6eb69dca9c8d482d766, type: 3}
+--- !u!1 &2005472858219796205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3867299443846040793, guid: 63dc102c5a1a6044786b0debef421f83,
+    type: 3}
+  m_PrefabInstance: {fileID: 717817396461576847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2071275376084788868
 PrefabInstance:
   m_ObjectHideFlags: 0
