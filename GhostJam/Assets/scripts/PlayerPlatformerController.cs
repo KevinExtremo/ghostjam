@@ -18,8 +18,12 @@ public class PlayerPlatformerController : PhysicsObject
     private bool isJumping = false;
     private bool inJump = false;
     public bool isCrawling = false;
+    public Light lightCone;
+
+    
 
     private bool isClimbingStairs = false;
+    private float originalLightIntensity;
 
     private Vector2 colliderOffsetStanding = new Vector2(-0.025f,0.0f);
     private Vector2 colliderScaleStanding = new Vector2(1.0f, 2.5f);
@@ -29,10 +33,11 @@ public class PlayerPlatformerController : PhysicsObject
 
     public Stairs CurrentStair { get; set; }
 
-
+    private Vector3 orginalScale;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private CapsuleCollider2D collider;
+
     
 
     // Use this for initialization
@@ -41,7 +46,8 @@ public class PlayerPlatformerController : PhysicsObject
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         collider = GetComponent<CapsuleCollider2D>();
-
+        orginalScale = transform.localScale;
+        originalLightIntensity = (lightCone == null) ? 0 : lightCone.intensity;
     }
 
     protected override void ComputeVelocity()
@@ -57,10 +63,11 @@ public class PlayerPlatformerController : PhysicsObject
         #endregion jumpEnd
 
         #region stairs
-        if(Input.GetAxis("Vertical") > 0.0f && CurrentStair != null)
+        if(Input.GetAxis("Vertical") > 0.0f && CurrentStair != null && !isClimbingStairs)
         {
             isClimbingStairs = true;
             animator.SetBool("isClimbingStairs", isClimbingStairs);
+            base.gravityModifier = 0;
 
             if (CurrentStair.isBottom)
             {
@@ -143,7 +150,8 @@ public class PlayerPlatformerController : PhysicsObject
 
         #endregion xMovement
 
-        targetVelocity = move * maxSpeed;
+        var curMaxSpeed = isCrawling ? crouchMaxSpeed : maxSpeed;
+        targetVelocity = move * curMaxSpeed;
     }
 
     public new void FixedUpdate()
@@ -152,14 +160,22 @@ public class PlayerPlatformerController : PhysicsObject
         {
             if (currentStairTicks < TicksOfStairClimbing)
             {
-                //TODO: move a little up and scale down
+                transform.localScale *= 0.9998f;
+                transform.position += Vector3.up * 0.08f;
                 currentStairTicks++;
+                if(currentStairTicks % 12 == 0)
+                {
+                    lightCone.intensity -= 1;
+                }
             }
             else
             {
-                transform.position = CurrentStair.targetLocation.position; 
+                transform.position = CurrentStair.targetPosition(); 
                 isClimbingStairs = false;
                 animator.SetBool("isClimbingStairs", isClimbingStairs);
+                transform.localScale = orginalScale;
+                gravityModifier = 2;
+                lightCone.intensity = originalLightIntensity;
             }            
         }
         else

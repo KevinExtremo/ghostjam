@@ -435,9 +435,10 @@ MonoBehaviour:
   maxSpeed: 21
   jumpTakeOffSpeed: 17
   crouchMaxSpeed: 7
-  ticksTilTakeOff: 60
-  TicksOfStairClimbing: 60
+  ticksTilTakeOff: 40
+  TicksOfStairClimbing: 120
   isCrawling: 0
+  lightCone: {fileID: 18784251}
   heightDiffCrawling: {x: 0, y: -2.4, z: 0}
 --- !u!50 &1236474987030113337
 Rigidbody2D:
@@ -454,7 +455,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -496,7 +497,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 76c760659b759594b8c6d15ffc73768a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
