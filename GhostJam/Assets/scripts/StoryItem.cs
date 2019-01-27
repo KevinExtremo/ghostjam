@@ -24,7 +24,9 @@ public class StoryItem : MonoBehaviour
     {
         if(StoryClues.Count -1 >= iterator)
         {
-            return StoryClues[iterator];
+            var text = StoryClues[iterator];
+            iterator++;
+            return text;
         }
         else
         {
